@@ -4,8 +4,13 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'CustomFont'; /* Name your font family */
+  src: url('Comic Sans MS.ttf'); /* Locate the .ttf file within your directory*/
+}
+
 body{
-	font-family: Comic Sans MS;
+	font-family: 'CustomFont';
 }
 
 div{
