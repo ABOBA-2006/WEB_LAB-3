@@ -7,6 +7,7 @@
 	<link rel="icon" href="pig_icon.png" type="image/icon type">
 
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -40,11 +41,13 @@
 
 			<div class="content-left__wide-block">
 				<img src="flexBox.png" alt="ERROR" class="photo content-left__wide-block__photo">
-				<ul class="content-left__wide-block__menu">
-				  <li><a href="index.html"><b>Main</b></a></li>
-				  <li><a href="index.html">Page 1</a></li>
-				  <li><a href="index.html">Page 2</a></li>
-				</ul>
+
+				<img src="002-noBackground.png" alt="ERROR" class="content-left__wide-block__photo-map" usemap="#ZeroTwoMap">
+				<map name="ZeroTwoMap">
+					<area shape="rect" coords="50,0,230,300" href="https://www.youtube.com/watch?v=hCzkkHwR2gg&ab_channel=CrunchyrollFR" alt="Opening">
+					<area shape="rect" coords="231,0,390,300" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" alt="RickRoll">
+					<area shape="rect" coords="391,0,550,300" href="https://www.youtube.com/watch?v=4N5rpXzVf80&ab_channel=TwinDrillXVlll" alt="Ending">
+				</map>
 			</div>
 			<div class="content-right-invisible">
 				<img src="zeroTwo.jpg" alt="ERROR" class="photo content-right__photo">
@@ -61,5 +64,11 @@
 			<img src="zeroTwo.jpg" alt="ERROR" class="photo content-right__photo">
 		</div>
 	</div>
+
+	<script>
+	    window.onload = function() {
+	        imageMapResize();
+	    }
+	</script>
 </body>
 </html>

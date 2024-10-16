@@ -71,17 +71,10 @@ div{
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.content-left__wide-block__menu{
-  	display: flex; 
-  	flex-direction: column;
-  	justify-content: center; 
-  	list-style-type: none; 
-  	font-size: 2.5vw;
-}
-
-.content-left__wide-block__menu li {
-	margin-top: 1vh;
-	text-align: center;
+.content-left__wide-block__photo-map{
+	margin-top:5%;
+	width:20vw;
+	border-radius: 1vw;
 }
 
 .content-left__footer{
@@ -148,9 +141,8 @@ div{
 		width: 100vw;
 		border-width: 1px;
 	}
-	.content-left__wide-block__menu{
-		margin-top: 2vh;
-		font-size: 6vw;
+	.content-left__wide-block__photo-map{
+		width: 60vw;
 	}
 	.content-left__small-blocks{
 		order: 2;
